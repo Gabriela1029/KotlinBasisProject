@@ -1,0 +1,14 @@
+package edu.unicatolica.kotlin
+fun espar(n: Int): Boolean{
+    return n % 2 ==0
+}
+
+
+
+fun main() {
+    val numeros = arrayOf(1, 2, 4, 7, 13, 9, 23)
+
+    val resultados = numeros.map { espar(it)}.toTypedArray()
+    println("In: ${numeros.joinToString (",")}")
+    println("Out: ${resultados.joinToString(",")}")
+}
